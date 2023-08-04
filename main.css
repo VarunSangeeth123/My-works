@@ -25,12 +25,12 @@
 
     
    
-    background-color: transparent;
+    
     display: flex;
     justify-content: space-between;
     height: 60px;
     width: 100%;
-    color: aliceblue;
+    color: rgb(1, 5, 8);
     align-items:center;
     padding: 5px;
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -39,33 +39,110 @@
 }
 
 
+.mm{
+
+    color: azure;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    
+}
+
 .cntrbtn{
-    background-color: transparent;
+    
     border-radius: 50px;
-    width: 43%;
+    width: 70%;
+    text-align: center;
+    justify-content: baseline;
+    padding: 20px;
     height: 3px;
     float: left;    
     position: absolute;
     align-content: center;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: white;
-    padding: 5%;
+    color: rgb(44, 70, 92);
+    
 }
+
+.ppp{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 1px;
+}
+
+.lkj{
+    margin-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.lkj input{
+
+    padding: 5px;
+}
+
 
 /* .btn{
     
 } */
 
 .mainface{
-    height: 350px;
+    height: 1000px;
     width: 100%;
     background-color: aqua;
 }
 
+.qwe{
+    position: absolute;
+    top:105px;
+    left: 295px;
+    height: 260px;
+    width: 400px;
+    background-color: rgb(154, 84, 219);
+    border-radius: 10px;
+
+    
+}
 
 
+.qwe::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #ffeda0 0%, #ffa585 100% );
+    transform: translate3d(0px, 20px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.qwe::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
